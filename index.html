@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NN-Training</title>
+  <link rel="stylesheet" href="./src/style.css">
+  <script defer type="module" src="./src/main.js"></script>
+  <script src="https://unpkg.com/ml5@1/dist/ml5.min.js"></script>
+</head>
+<body>
+<section>
+  <h1>Handpose detection</h1>
+  <button id="webcamButton">Start webcam</button>
+  <button id="logButton">Log current pose</button>
+  <div class="videoView">
+    <div style="position: relative;">
+      <video id="webcam" style="position: absolute;" muted autoplay playsinline></video>
+      <canvas id="output_canvas" style="position: absolute; left: 0px; top: 0px;"></canvas>
+      <div id="myimage">hoi</div>
+    </div>
+  </div>
+  <button id="addPose1Button">
+    <img src="./imgaes/pose1.png"></button>
+  <button id="addPose2Button">
+    <img src="./imgaes/pose2.png"></button>
+  <button id="addPose3Button">
+    <img src="./imgaes/pose3.png"></button>
+  <button id="addPose4Button">
+    <img src="./imgaes/pose4.png"></button>
+  <button id="addTrainButton">TRAIN</button>
+  <button id="addAccuracyButton">Test ACCURACY</button>
+</section>
+</body>
+</html>
